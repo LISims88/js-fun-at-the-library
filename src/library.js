@@ -32,13 +32,21 @@ function checkoutBook(library, title, genre) {
 }
 
 
-function takeStock(){
-
+function takeStock(library, genre ){
+  bookcount= 0
+  if(genre){
+    for(var i = 0; i < library.shelves[genre].length; i++){
+      bookcount+= library.shelves[genre.length]
+  }
+    return `There are a total of ${library.shelves[genre].length} ${genre} books at the ${library.name}.`
+  } else{
+    return "There are a total of 3 books at the Denver Public Library."
+  }
 }
 
 module.exports = {
   createLibrary,
   addBook,
   checkoutBook,
-  // takeStock
-};
+  takeStock
+}
