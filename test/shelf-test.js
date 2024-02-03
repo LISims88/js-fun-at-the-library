@@ -109,7 +109,7 @@ describe("shelf.js", function() {
       assert.isFunction(unshelfBook);
     });
 
-    it.skip("should remove a book by name", function() {
+    it("should remove a book by name", function() {
       var hyperion = {
         title: "Hyperion",
         mainCharacter: { name: "The Shrike", age: null, pronouns: "they" },
@@ -141,7 +141,7 @@ describe("shelf.js", function() {
       assert.deepEqual(sciFiShelf, [endersGame]);
     });
 
-    it.skip("should remove a book on a different shelf by name", function() {
+    it("should remove a book on a different shelf by name", function() {
       var bossypants = {
         title: "Bossypants",
         mainCharacter: { name: "Tina Fey", age: 50, pronouns: "she/her" },
