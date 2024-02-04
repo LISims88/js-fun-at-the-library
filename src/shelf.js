@@ -24,9 +24,6 @@ function listTitles(shelf){
 }
 
 function searchShelf(shelf, title){
-  //console.log('shelf',shelf)
-  //console.log('book', title)
-  //console.log(shelf[0][title])
   for (var i = 0; i < shelf.length; i++){
     if (shelf[i].title === title){
         return true
